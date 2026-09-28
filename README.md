@@ -1,6 +1,6 @@
 # ChaosControl-Web
 
-Sitio estático multipágina de **Chaos Control**, preparado para abrirse localmente y publicarse más adelante en GitHub/Vercel.
+Sitio estático multipágina de **Chaos Control**, publicado en GitHub y preparado para desplegarse en Vercel.
 
 ## 1. Abrir la web localmente
 
@@ -19,16 +19,14 @@ No hay dependencias, compilación ni instalación de paquetes.
 El enlace está centralizado al inicio de `script.js`:
 
 ```js
-const DOWNLOAD_URL = "";
+const DOWNLOAD_URL = "https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-v1.0.zip";
 ```
 
-Cuando exista el lanzamiento oficial, reemplaza la cadena vacía por la URL completa de GitHub Releases. Por ejemplo:
+La URL actual apunta a la Release académica v1.0.0 publicada en GitHub:
 
-```js
-const DOWNLOAD_URL = "https://github.com/USUARIO/REPOSITORIO/releases/latest";
-```
+`https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-v1.0.zip`
 
-Mientras la constante siga vacía, todos los botones de descarga mostrarán el mensaje: **“Descarga disponible durante la feria”**.
+Si se publica una versión futura, basta con reemplazar esta constante por la nueva URL.
 
 ## 3. Carpeta que debe subirse a GitHub
 
@@ -70,4 +68,4 @@ ChaosControl-Web/
     └── screenshots/
 ```
 
-La carpeta `assets/screenshots` queda disponible para añadir capturas reales en el futuro. Las composiciones actuales del sitio están identificadas como representaciones ilustrativas y no se presentan como capturas reales.
+La web ya incluye capturas reales de las cuatro vistas principales de Chaos Control dentro de `assets/img/screenshots/`.
