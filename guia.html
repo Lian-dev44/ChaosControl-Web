@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guía de uso de Chaos Control: apertura, permisos, panel, procesos, conexiones, configuración y bloqueo de red con Windows Firewall.">
+  <meta name="theme-color" content="#07080b">
+  <title>Guía de uso | Chaos Control</title>
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Chaos Control, inicio"><img src="assets/icons/chaos-control-icon.png" alt="" width="42" height="42"><span>Chaos Control<small>Network Task Manager</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="caracteristicas.html">Características</a><a href="guia.html" aria-current="page">Guía de uso</a><a href="descarga.html#requisitos">Requisitos</a><a class="button button-primary button-small" href="descarga.html#descargar">Descargar</a></nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Migas de pan"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Guía de uso</span></nav>
+        <p class="eyebrow">De cero al control</p>
+        <h1>Entiende tu red en <span class="gradient-text">cuatro secciones.</span></h1>
+        <p class="lead">Esta guía explica cómo iniciar Chaos Control, interpretar los datos y utilizar las funciones avanzadas con seguridad.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container guide-layout">
+        <nav class="guide-nav" aria-label="Índice de la guía">
+          <strong>En esta guía</strong>
+          <a href="#inicio">1. Abrir el programa</a><a href="#panel">2. Panel</a><a href="#procesos">3. Procesos</a><a href="#conexiones">4. Conexiones</a><a href="#configuracion">5. Configuración</a><a href="#interpretar">6. Interpretar datos</a><a href="#control">7. Bloqueo de red</a>
+        </nav>
+
+        <div class="guide-content">
+          <article class="guide-step reveal" id="inicio">
+            <span class="number-chip">01</span>
+            <div><p class="eyebrow">Primer arranque</p><h2>Abrir Chaos Control</h2><p>Extrae o conserva completa la carpeta distribuida del programa y ejecuta <strong>ChaosControl.exe</strong>. El programa inicia el monitoreo y abre la sección Panel.</p><div class="callout"><strong>Permisos:</strong> el monitoreo básico funciona con permisos normales, aunque Windows puede ocultar procesos o conexiones protegidas. Para activar la captura con WinDivert y aplicar límites o bloqueos, abre Chaos Control con <strong>Ejecutar como administrador</strong>.</div></div>
+          </article>
+
+          <article class="guide-step reveal" id="panel">
+            <span class="number-chip">02</span>
+            <div><p class="eyebrow">Sección 1</p><h2>Panel / Dashboard</h2><p>Es la vista general del sistema. Las tarjetas superiores muestran las tasas globales de descarga y subida, además de los paquetes procesados por segundo.</p><ul class="check-list"><li>La gráfica muestra la evolución reciente del tráfico.</li><li>La tabla inferior destaca los procesos con mayor actividad de red.</li><li>El botón de pausa detiene las actualizaciones visuales; al reanudar, el monitoreo continúa.</li></ul><a class="guide-screenshot screenshot-frame" href="assets/img/screenshots/dashboard.png" data-lightbox data-caption="Panel principal de Chaos Control."><img src="assets/img/screenshots/dashboard.png" alt="Panel principal de Chaos Control con métricas globales, gráfica y tabla de procesos" loading="lazy" width="1719" height="1080"><span class="expand-hint">Ampliar captura</span></a></div>
+          </article>
+
+          <article class="guide-step reveal" id="procesos">
+            <span class="number-chip">03</span>
+            <div><p class="eyebrow">Sección 2</p><h2>Procesos</h2><p>Reúne los procesos detectados y permite buscar por nombre o PID. El filtro superior ayuda a acotar la lista.</p><ul class="check-list"><li>Lee en cada fila el PID, tráfico de descarga y subida, paquetes, uso de red y estado.</li><li>Selecciona un proceso para abrir su gráfica de velocidad en el panel lateral.</li><li>Usa el control de ancho de banda para aplicar un límite o el botón rojo para bloquear la red.</li></ul><a class="guide-screenshot screenshot-frame" href="assets/img/screenshots/procesos.png" data-lightbox data-caption="Vista de Procesos y sus controles de red."><img src="assets/img/screenshots/procesos.png" alt="Vista de Procesos con tabla de métricas, gráfica, limitador y botón para bloquear la red" loading="lazy" width="1716" height="1080"><span class="expand-hint">Ampliar captura</span></a></div>
+          </article>
+
+          <article class="guide-step reveal" id="conexiones">
+            <span class="number-chip">04</span>
+            <div><p class="eyebrow">Sección 3</p><h2>Conexiones</h2><p>Consulta los endpoints TCP y UDP detectados por Windows. Puedes filtrar por protocolo o buscar un proceso, una dirección IP o un puerto. Al elegir una fila, el panel derecho resume la conexión.</p><dl class="definition-grid"><div class="definition-card"><dt>Endpoint local</dt><dd>Dirección IP y puerto de tu propio equipo usados por la conexión.</dd></div><div class="definition-card"><dt>Endpoint remoto</dt><dd>Dirección y puerto del otro extremo; puede aparecer vacío en sockets que solo escuchan.</dd></div><div class="definition-card"><dt>PID</dt><dd>Identificador numérico del proceso al que Windows asocia el socket.</dd></div><div class="definition-card"><dt>Estado</dt><dd><strong>ESTABLISHED</strong> indica una sesión TCP activa; <strong>LISTEN</strong>, un puerto a la espera; en UDP puede no haber estado.</dd></div></dl><a class="guide-screenshot screenshot-frame" href="assets/img/screenshots/conexiones.png" data-lightbox data-caption="Conexiones TCP/UDP y detalle de un endpoint seleccionado."><img src="assets/img/screenshots/conexiones.png" alt="Vista de Conexiones con protocolos, endpoints locales y remotos, puertos y estados" loading="lazy" width="1722" height="1080"><span class="expand-hint">Ampliar captura</span></a></div>
+          </article>
+
+          <article class="guide-step reveal" id="configuracion">
+            <span class="number-chip">05</span>
+            <div><p class="eyebrow">Sección 4</p><h2>Configuración</h2><p>Controla el audio, la apariencia y el comportamiento del monitoreo desde una sola vista.</p><ul class="check-list"><li>Activa el soundtrack, elige una canción, ajusta el volumen, silencia o usa los controles anterior, reproducir/pausar y siguiente.</li><li>Elige repetición de lista, repetición de canción o reproducción aleatoria.</li><li>Activa animaciones suaves e imágenes decorativas.</li><li>Define el intervalo de monitoreo, muestra procesos sin tráfico y limpia el historial de gráficas.</li><li>Activa el tráfico y los límites por proceso y configura la velocidad del enlace.</li></ul><a class="guide-screenshot screenshot-frame" href="assets/img/screenshots/configuracion.png" data-lightbox data-caption="Configuración de audio, interfaz, monitoreo y captura por proceso."><img src="assets/img/screenshots/configuracion.png" alt="Vista de Configuración con soundtrack, canción, volumen, mute, repetición, interfaz, monitoreo y captura" loading="lazy" width="1717" height="1080"><span class="expand-hint">Ampliar captura</span></a></div>
+          </article>
+
+          <article class="guide-step reveal" id="interpretar">
+            <span class="number-chip">06</span>
+            <div><p class="eyebrow">Lectura de métricas</p><h2>Interpretar descarga, subida y gráficas</h2><p><strong>Descarga</strong> es la velocidad a la que el equipo recibe datos; <strong>subida</strong> es la velocidad a la que los envía. Ambas son tasas globales del sistema y cambian con la actividad de todas las aplicaciones.</p><p>Un pico breve en la gráfica puede corresponder a una carga de página, actualización o sincronización. Para encontrar contexto, compara el momento del pico con los procesos que tienen conexiones y revisa sus endpoints. La presencia de una conexión no demuestra por sí sola un consumo alto.</p></div>
+          </article>
+
+          <article class="guide-step reveal" id="control">
+            <span class="number-chip">07</span>
+            <div><p class="eyebrow">Función avanzada</p><h2>Limitar o bloquear la red</h2><ol class="check-list"><li>Abre Chaos Control como administrador y comprueba en Configuración que la captura y los límites por proceso estén activos.</li><li>En Procesos, selecciona el programa que quieres controlar.</li><li>Ajusta el porcentaje de ancho de banda y pulsa “Aplicar límite”, o usa “Bloquear red” para cortar el acceso.</li><li>Observa la gráfica lateral para comprobar el comportamiento del proceso.</li></ol><div class="callout"><strong>Importante:</strong> estas acciones afectan la conectividad del proceso seleccionado. Verifica su nombre y PID y evita bloquear procesos del sistema si no conoces su función.</div></div>
+          </article>
+
+          <article class="guide-step reveal">
+            <span class="number-chip">08</span>
+            <div><p class="eyebrow">Buenas prácticas</p><h2>Usar el programa con seguridad</h2><ul class="check-list"><li>No bloquees procesos del sistema si no conoces su función.</li><li>Comprueba el nombre y el PID antes de aplicar un límite o bloqueo.</li><li>Si faltan conexiones protegidas, vuelve a abrir el programa como administrador.</li><li>Confirma en el Panel que la captura por proceso con WinDivert esté activa antes de interpretar sus métricas.</li></ul><div class="action-row"><a class="button button-primary" href="descarga.html">Continuar a descarga</a><a class="button button-secondary" href="caracteristicas.html">Revisar funciones</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/icons/chaos-control-icon.png" alt="" width="42" height="42"><span>Chaos Control<small>Network Task Manager</small></span></a><p>Proyecto académico para feria universitaria que integra monitoreo de red, visualización de datos y diseño de interfaces.</p></div><div><p class="footer-title">Explorar</p><nav class="footer-links" aria-label="Navegación del pie"><a href="index.html">Inicio</a><a href="caracteristicas.html">Características</a><a href="descarga.html">Descarga</a></nav></div><div><p class="footer-title">Uso académico</p><p class="footer-note">Proyecto educativo y no comercial. Sonic, Shadow y los materiales relacionados pertenecen a sus respectivos propietarios.</p></div></div><div class="footer-bottom"><span>© <span data-year></span> Chaos Control.</span><span>Desarrollado para presentación universitaria.</span></div></div></footer>
+  <div class="toast" id="site-toast" role="status" aria-live="polite"><strong>Descarga disponible durante la feria</strong>El enlace oficial se publicará aquí cuando la versión final esté en GitHub Releases.</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descarga Chaos Control para Windows y consulta requisitos, permisos e instrucciones de ejecución del proyecto académico.">
+  <meta name="theme-color" content="#07080b">
+  <title>Descarga | Chaos Control</title>
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Chaos Control, inicio"><img src="assets/icons/chaos-control-icon.png" alt="" width="42" height="42"><span>Chaos Control<small>Network Task Manager</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="caracteristicas.html">Características</a><a href="guia.html">Guía de uso</a><a href="#requisitos" aria-current="page">Requisitos</a><a class="button button-primary button-small" href="#descargar">Descargar</a></nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero download-hero" id="descargar">
+      <div class="container">
+        <nav class="breadcrumbs breadcrumbs-center" aria-label="Migas de pan"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Descarga</span></nav>
+        <p class="eyebrow">Preparado para la feria</p>
+        <h1>Control local. <span class="gradient-text">Datos claros.</span></h1>
+        <p class="lead">Chaos Control se distribuye para Windows como una aplicación de escritorio académica.</p>
+        <div class="download-panel reveal">
+          <img src="assets/icons/chaos-control-icon.png" alt="Icono de Chaos Control" width="92" height="92">
+          <span class="version-badge">Versión académica actual · Windows 64 bits</span>
+          <h2>Descargar Chaos Control</h2>
+          <p class="muted">El enlace oficial de GitHub Releases se habilitará para la feria. El botón ya está preparado para recibirlo.</p>
+          <a class="download-preview screenshot-frame" href="assets/img/screenshots/dashboard.png" data-lightbox data-caption="Panel principal de la aplicación Chaos Control para Windows."><img src="assets/img/screenshots/dashboard.png" alt="Panel principal real de la aplicación Chaos Control para Windows" width="1719" height="1080"><span class="expand-hint">Ver aplicación</span></a>
+          <a class="button button-primary" href="#" data-download>Descargar Chaos Control <span aria-hidden="true">↓</span></a>
+          <p class="screen-caption">Disponible próximamente · Proyecto académico no comercial</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="requisitos">
+      <div class="container">
+        <div class="section-header reveal"><div><p class="eyebrow">Compatibilidad estimada</p><h2>Requisitos del sistema.</h2><p>Estos valores son una base razonable para la versión actual. El rendimiento puede variar según la cantidad de procesos y conexiones del equipo.</p></div></div>
+        <div class="requirements-grid">
+          <article class="requirement-card reveal"><span class="version-badge">Mínimos</span><h3>Para ejecutar y monitorear</h3><ul class="requirements-list"><li><strong>Sistema operativo</strong><span>Windows 10 u 11 de 64 bits.</span></li><li><strong>Procesador</strong><span>CPU moderna de 2 núcleos.</span></li><li><strong>Memoria</strong><span>4 GB de RAM.</span></li><li><strong>Almacenamiento</strong><span>Espacio suficiente para la carpeta del programa y sus recursos.</span></li><li><strong>Red</strong><span>Adaptador de red compatible con Windows y conexión activa.</span></li></ul></article>
+          <article class="requirement-card recommended reveal"><span class="version-badge">Recomendados</span><h3>Para una experiencia fluida</h3><ul class="requirements-list"><li><strong>Sistema operativo</strong><span>Windows 11 de 64 bits actualizado.</span></li><li><strong>Procesador</strong><span>CPU moderna de 4 núcleos o más.</span></li><li><strong>Memoria</strong><span>8 GB de RAM o más.</span></li><li><strong>Pantalla</strong><span>Resolución de 1366 × 768 o superior.</span></li><li><strong>Permisos</strong><span>Cuenta con acceso de administrador para captura, límites y bloqueo por proceso.</span></li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="section-header reveal"><div><p class="eyebrow">Ejecución básica</p><h2>Listo en cuatro pasos.</h2><p>La distribución del programa usa una carpeta para conservar estables Qt Multimedia, los recursos gráficos y el reproductor.</p></div></div>
+        <div class="install-steps">
+          <article class="card install-step reveal"><h3>Descarga</h3><p>Obtén el archivo oficial desde este sitio cuando se habilite GitHub Releases.</p></article>
+          <article class="card install-step reveal"><h3>Extrae</h3><p>Descomprime el paquete y conserva juntos el ejecutable y la carpeta de recursos.</p></article>
+          <article class="card install-step reveal"><h3>Ejecuta</h3><p>Abre <strong>ChaosControl.exe</strong>. Windows puede mostrar un aviso por tratarse de un proyecto académico.</p></article>
+          <article class="card install-step reveal"><h3>Eleva si hace falta</h3><p>Usa “Ejecutar como administrador” para activar la captura con WinDivert y controlar la red por proceso.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container showcase">
+        <div class="reveal"><p class="eyebrow">Antes de usar</p><h2>Permisos claros, control responsable.</h2><p>La inspección básica funciona con permisos normales. Windows puede limitar el acceso a procesos protegidos; ejecutar como administrador mejora la visibilidad y permite activar las funciones de captura y control por proceso.</p><div class="truth-note"><span class="icon-box" aria-hidden="true">!</span><div><strong>Captura por proceso con WinDivert</strong><p>Cuando está activa, el Panel muestra su estado y porcentaje de cobertura. Configura primero la velocidad del enlace para que el limitador calcule correctamente el porcentaje.</p></div></div></div>
+        <div class="card character-card reveal"><img src="assets/img/shadow-pose-4.png" alt="Ilustración temática de Shadow the Hedgehog"></div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container"><div class="project-banner reveal"><p class="eyebrow">Proyecto académico</p><h2>Creado para aprender, demostrar y explicar.</h2><p>Chaos Control forma parte de una presentación de feria universitaria. No es un producto comercial ni sustituye herramientas profesionales de seguridad o diagnóstico de red.</p><div class="action-row"><a class="button button-primary" href="#" data-download>Descargar cuando esté disponible</a><a class="button button-secondary" href="guia.html">Leer la guía</a></div><img class="banner-character" src="assets/img/shadow-pose-1.png" alt="" aria-hidden="true"></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/icons/chaos-control-icon.png" alt="" width="42" height="42"><span>Chaos Control<small>Network Task Manager</small></span></a><p>Proyecto académico para feria universitaria que integra monitoreo de red, visualización de datos y diseño de interfaces.</p></div><div><p class="footer-title">Explorar</p><nav class="footer-links" aria-label="Navegación del pie"><a href="index.html">Inicio</a><a href="caracteristicas.html">Características</a><a href="guia.html">Guía de uso</a></nav></div><div><p class="footer-title">Uso académico</p><p class="footer-note">Proyecto educativo y no comercial. Sonic, Shadow y los materiales relacionados pertenecen a sus respectivos propietarios.</p></div></div><div class="footer-bottom"><span>© <span data-year></span> Chaos Control.</span><span>Desarrollado para presentación universitaria.</span></div></div></footer>
+  <div class="toast" id="site-toast" role="status" aria-live="polite"><strong>Descarga disponible durante la feria</strong>El enlace oficial se publicará aquí cuando la versión final esté en GitHub Releases.</div>
+</body>
+</html>

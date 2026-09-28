@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chaos Control es un Network Task Manager académico para Windows que permite visualizar procesos, conexiones y actividad de red en tiempo real.">
+  <meta name="theme-color" content="#07080b">
+  <title>Chaos Control | Network Task Manager para Windows</title>
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Chaos Control, inicio">
+        <img src="assets/icons/chaos-control-icon.png" alt="" width="42" height="42">
+        <span>Chaos Control<small>Network Task Manager</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="caracteristicas.html">Características</a>
+        <a href="guia.html">Guía de uso</a>
+        <a href="descarga.html#requisitos">Requisitos</a>
+        <a class="button button-primary button-small" href="descarga.html#descargar">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Control local · Windows 10/11</p>
+          <h1><span class="gradient-text">Domina el caos</span> de tu red.</h1>
+          <p class="lead">Observa el tráfico del sistema, identifica procesos y revisa conexiones TCP/UDP desde una interfaz diseñada para entender lo que ocurre en tu equipo.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="descarga.html">Descargar Chaos Control <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="caracteristicas.html">Ver características <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-notes" aria-label="Datos clave">
+            <span>Proyecto académico</span>
+            <span>Monitoreo real</span>
+            <span>Sin telemetría externa</span>
+          </div>
+        </div>
+
+        <figure class="hero-product reveal">
+          <a class="screenshot-frame screenshot-frame-hero" href="assets/img/screenshots/dashboard.png" data-lightbox data-caption="Panel principal de Chaos Control con métricas y gráfica de tráfico en tiempo real.">
+            <img src="assets/img/screenshots/dashboard.png" alt="Panel principal de Chaos Control con descarga, subida, paquetes por segundo, gráfica de tráfico y procesos activos" width="1719" height="1080">
+            <span class="expand-hint">Ampliar captura</span>
+          </a>
+          <figcaption>Supervisa el estado de tu red en tiempo real desde un panel centralizado.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Capacidades principales">
+      <div class="quick-strip reveal">
+        <article class="quick-item"><span class="number-chip">01</span><strong>Tráfico en vivo</strong><p>Descarga, subida y paquetes por segundo con gráfica móvil.</p></article>
+        <article class="quick-item"><span class="number-chip">02</span><strong>Procesos visibles</strong><p>Nombre, PID, tráfico, paquetes, uso de red y estado en una sola tabla.</p></article>
+        <article class="quick-item"><span class="number-chip">03</span><strong>Mapa de conexiones</strong><p>Endpoints TCP/UDP, IP, puertos y estado de cada socket.</p></article>
+        <article class="quick-item"><span class="number-chip">04</span><strong>Control por proceso</strong><p>Aplica límites de ancho de banda o bloquea la red de la aplicación seleccionada.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="capacidades">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <p class="eyebrow">Control con contexto</p>
+            <h2>La red deja de ser invisible.</h2>
+            <p>Chaos Control convierte contadores y conexiones del sistema en información clara para analizar actividad sin inventar métricas.</p>
+          </div>
+          <a class="button button-secondary" href="caracteristicas.html">Explorar todas las funciones</a>
+        </div>
+        <div class="feature-grid">
+          <article class="card feature-card reveal"><span class="icon-box">NET</span><h3>Panel en tiempo real</h3><p>Concentra tasas globales, paquetes y los procesos con más conexiones activas.</p></article>
+          <article class="card feature-card reveal"><span class="icon-box">PID</span><h3>Procesos del sistema</h3><p>Busca por nombre o PID y filtra rápidamente los procesos con actividad de red.</p></article>
+          <article class="card feature-card reveal"><span class="icon-box">TCP</span><h3>Conexiones detalladas</h3><p>Consulta protocolos, extremos locales y remotos, puertos y estados detectados por Windows.</p></article>
+          <article class="card feature-card reveal"><span class="icon-box">CTL</span><h3>Límite o bloqueo</h3><p>Selecciona un proceso para ajustar su ancho de banda o bloquear su acceso a la red.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" aria-labelledby="conoce-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div><p class="eyebrow">Interfaz real</p><h2 id="conoce-title">Conoce Chaos Control.</h2><p>Explora sus cuatro vistas principales. Selecciona cualquier captura para verla a tamaño completo.</p></div>
+          <a class="button button-secondary" href="guia.html">Aprender a usarlo <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="screenshot-gallery">
+          <article class="screenshot-card reveal"><a class="screenshot-frame" href="assets/img/screenshots/dashboard.png" data-lightbox data-caption="Panel: actividad general, métricas y gráfica de tráfico en tiempo real."><img src="assets/img/screenshots/dashboard.png" alt="Vista del Panel de Chaos Control con métricas globales y gráfica de tráfico" loading="lazy" width="1719" height="1080"><span class="expand-hint">Ampliar</span></a><div><h3>Panel</h3><p>Estado general, descarga, subida, paquetes por segundo y actividad reciente.</p></div></article>
+          <article class="screenshot-card reveal"><a class="screenshot-frame" href="assets/img/screenshots/procesos.png" data-lightbox data-caption="Procesos: actividad de red por aplicación y controles de límite o bloqueo."><img src="assets/img/screenshots/procesos.png" alt="Vista de Procesos de Chaos Control con PID, tráfico, paquetes, uso de red y controles" loading="lazy" width="1716" height="1080"><span class="expand-hint">Ampliar</span></a><div><h3>Procesos</h3><p>Procesos activos, PID, tráfico, paquetes, uso de red y controles por aplicación.</p></div></article>
+          <article class="screenshot-card reveal"><a class="screenshot-frame" href="assets/img/screenshots/conexiones.png" data-lightbox data-caption="Conexiones: endpoints TCP/UDP con direcciones, puertos y estado."><img src="assets/img/screenshots/conexiones.png" alt="Vista de Conexiones de Chaos Control con procesos, protocolos, endpoints y estados" loading="lazy" width="1722" height="1080"><span class="expand-hint">Ampliar</span></a><div><h3>Conexiones</h3><p>Endpoints TCP/UDP, procesos, direcciones locales y remotas, puertos y estado.</p></div></article>
+          <article class="screenshot-card reveal"><a class="screenshot-frame" href="assets/img/screenshots/configuracion.png" data-lightbox data-caption="Configuración: audio, interfaz, monitoreo y captura por proceso."><img src="assets/img/screenshots/configuracion.png" alt="Vista de Configuración de Chaos Control con soundtrack, volumen, interfaz y monitoreo" loading="lazy" width="1717" height="1080"><span class="expand-hint">Ampliar</span></a><div><h3>Configuración</h3><p>Soundtrack, volumen, reproducción, interfaz, frecuencia de actualización y captura.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div><p class="eyebrow">Proyecto interdisciplinario</p><h2>Tres materias, una experiencia.</h2><p>La solución une datos de red, visualización y diseño de interfaces en un producto coherente para la feria universitaria.</p></div>
+        </div>
+        <div class="discipline-grid">
+          <article class="card discipline-card reveal"><span class="icon-box">TR</span><h3>Telemática y Redes</h3><p>Procesos, conexiones TCP/UDP, IP, puertos, tráfico, paquetes y ancho de banda forman la base técnica del monitoreo.</p></article>
+          <article class="card discipline-card reveal"><span class="icon-box">IG</span><h3>Informática Gráfica</h3><p>Gráficas móviles, indicadores y jerarquía visual transforman datos dinámicos en información que puede interpretarse con rapidez.</p></article>
+          <article class="card discipline-card reveal"><span class="icon-box">UI</span><h3>Interfaces Gráficas</h3><p>Este sitio demuestra estructura semántica, navegación multipágina, HTML, CSS, JavaScript, diseño responsive, CTA y banners.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="project-banner reveal">
+          <p class="eyebrow">Visualiza. Analiza. Controla.</p>
+          <h2>Toma el control de tu red con Chaos Control.</h2>
+          <p>Descubre qué procesos mantienen conexiones activas y toma decisiones con información clara del sistema.</p>
+          <div class="action-row"><a class="button button-primary" href="descarga.html">Ir a la descarga</a><a class="button button-secondary" href="guia.html">Ver la guía</a></div>
+          <img class="banner-character" src="assets/img/shadow-pose-3.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/icons/chaos-control-icon.png" alt="" width="42" height="42"><span>Chaos Control<small>Network Task Manager</small></span></a><p>Proyecto académico para feria universitaria que integra monitoreo de red, visualización de datos y diseño de interfaces.</p></div>
+        <div><p class="footer-title">Explorar</p><nav class="footer-links" aria-label="Navegación del pie"><a href="caracteristicas.html">Características</a><a href="guia.html">Guía de uso</a><a href="descarga.html">Descarga</a></nav></div>
+        <div><p class="footer-title">Uso académico</p><p class="footer-note">Proyecto educativo y no comercial. Sonic, Shadow y los materiales relacionados pertenecen a sus respectivos propietarios.</p></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year></span> Chaos Control.</span><span>Desarrollado para presentación universitaria.</span></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="site-toast" role="status" aria-live="polite"><strong>Descarga disponible durante la feria</strong>El enlace oficial se publicará aquí cuando la versión final esté en GitHub Releases.</div>
+</body>
+</html>
