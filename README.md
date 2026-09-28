@@ -19,12 +19,12 @@ No hay dependencias, compilación ni instalación de paquetes.
 El enlace está centralizado al inicio de `script.js`:
 
 ```js
-const DOWNLOAD_URL = "https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-v1.0.zip";
+const DOWNLOAD_URL = "https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-Setup-v1.0.exe";
 ```
 
 La URL actual apunta a la Release académica v1.0.0 publicada en GitHub:
 
-`https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-v1.0.zip`
+`https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-Setup-v1.0.exe`
 
 Si se publica una versión futura, basta con reemplazar esta constante por la nueva URL.
 

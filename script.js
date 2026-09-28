@@ -1,7 +1,7 @@
 "use strict";
 
-// URL oficial de descarga de Chaos Control v1.0.0 en GitHub Releases.
-const DOWNLOAD_URL = "https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-v1.0.zip";
+// URL oficial del instalador de Chaos Control v1.0.0 en GitHub Releases.
+const DOWNLOAD_URL = "https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-Setup-v1.0.exe";
 
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
