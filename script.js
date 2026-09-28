@@ -1,8 +1,7 @@
 "use strict";
 
-// Reemplaza esta cadena una sola vez cuando exista la URL definitiva de GitHub Releases.
-// Ejemplo: const DOWNLOAD_URL = "https://github.com/usuario/repositorio/releases/latest";
-const DOWNLOAD_URL = "";
+// URL oficial de descarga de Chaos Control v1.0.0 en GitHub Releases.
+const DOWNLOAD_URL = "https://github.com/Lian-dev44/ChaosControl/releases/download/v1.0.0/ChaosControl-v1.0.zip";
 
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
